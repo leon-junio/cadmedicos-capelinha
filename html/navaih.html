@@ -1,0 +1,17 @@
+<script>
+    function conf(url) {
+        var a = confirm('Deseja abandonar os dados desse formulario ?');
+        if (a) {
+            document.location.href = url;
+        }
+    }
+</script>
+<ul class="naver">
+    <li style="background-color: whitesmoke;padding-bottom: 4px;">
+        <h1>Docs Capelinha</h1>
+    </li>
+    <li><a onclick="conf('tela_principal.php');">Home</a></li>
+    <li><a onclick="conf('tela_tfd.php');">TFD</a></li>
+    <li><a class="active">AIH</a></li>
+    <li><a onclick="conf('tela_alc.php');">ALC</a></li>
+</ul>
